@@ -1,0 +1,44 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "list-users-client-side-solution",
+    "id": "20304feb-1326-419a-93ac-f15115530549",
+    "version": "1.0.0.1",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.15.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "list-users description"
+      },
+      "longDescription": {
+        "default": "list-users description"
+      },
+      "screenshotPaths": [
+        
+      ],
+      "videoUrl": "",
+      "categories": [
+        
+      ]
+    },
+    "features": [
+      {
+        "title": "list-users Feature",
+        "description": "The feature that activates elements of the list-users solution.",
+        "id": "358e7a7f-8447-4784-9060-fbd6add30f92",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/list-users.sppkg"
+  }
+}
