@@ -10,15 +10,17 @@
     "serve": "gulp bundle --custom-serve --max_old_space_size=4096 && fast-serve"
   },
   "dependencies": {
-    "tslib": "2.3.1",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "office-ui-fabric-react": "7.185.7",
     "@microsoft/sp-core-library": "1.15.2",
+    "@microsoft/sp-lodash-subset": "1.15.2",
+    "@microsoft/sp-office-ui-fabric-core": "1.15.2",
     "@microsoft/sp-property-pane": "1.15.2",
     "@microsoft/sp-webpart-base": "1.15.2",
-    "@microsoft/sp-lodash-subset": "1.15.2",
-    "@microsoft/sp-office-ui-fabric-core": "1.15.2"
+    "@pnp/graph": "^3.11.0",
+    "@pnp/sp": "^3.11.0",
+    "office-ui-fabric-react": "7.185.7",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "tslib": "2.3.1"
   },
   "devDependencies": {
     "@microsoft/rush-stack-compiler-4.5": "0.2.2",

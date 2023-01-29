@@ -22,7 +22,6 @@ export default class ListUsersWebPart extends BaseClientSideWebPart<IListUsersWe
       ListUsers,
       {
         description: this.properties.description,
-        context: this.context,
       }
     );
 

@@ -14,7 +14,6 @@ export const ListUsers: React.FunctionComponent<IListUsersProps> = (props: React
 
   return (
     <div>
-      dummy text
       <ListOfUsers context={props.context}/>
     </div>
   );
