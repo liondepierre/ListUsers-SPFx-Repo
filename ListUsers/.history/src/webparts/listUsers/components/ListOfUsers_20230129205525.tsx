@@ -1,5 +1,5 @@
 import { WebPartContext } from '@microsoft/sp-webpart-base';
-import { PrimaryButton, Stack, Text } from 'office-ui-fabric-react';
+import { Stack, Text } from 'office-ui-fabric-react';
 import * as React from 'react';
 import ListUsersProvider from '../../../providers/ListUsersProvider';
 import { IUser } from '../models/IUser';
@@ -15,23 +15,22 @@ export const ListOfUsers: React.FunctionComponent<IListOfUsersProps> = (props: R
 
     const fetchUserListData = async (): Promise<void> => {
         const allUsersFromList: IUser[] = await listUsersProvider.getUsers();
-
+        
         setUserList(allUsersFromList)
     }
 
     React.useEffect(() => {
+        console.log("jfwjfejiwfejiij")
         fetchUserListData().catch((error) => console.log(error));
     }, [])
-
-    return (
-        <div>
-            <Stack tokens={{ childrenGap: "3px" }}>
-                {userList.map((user) => {
-                    return (
-                        <Text>{user.Username}</Text>
-                    )
-                })}
-            </Stack>
-        </div>
-    );
+    
+  return (
+    <div>
+        <Stack tokens={{childrenGap: "3px"}} horizontal>
+            {userList.map((value) => {
+                value.Username
+            })}
+        </Stack>
+    </div>
+  );
 };

@@ -25,11 +25,12 @@ export const ListOfUsers: React.FunctionComponent<IListOfUsersProps> = (props: R
 
     return (
         <div>
-            <Stack tokens={{ childrenGap: "3px" }}>
+            <Stack tokens={{ childrenGap: "3px" }} horizontal>
                 {userList.map((user) => {
-                    return (
-                        <Text>{user.Username}</Text>
-                    )
+                    <div>
+                        <Text>{user.Username}</Text> //this shows nothing
+                        {console.log(user.Username)} //this shows the data in the console
+                    </div>
                 })}
             </Stack>
         </div>

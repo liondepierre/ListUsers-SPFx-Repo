@@ -25,7 +25,7 @@ export const ListOfUsers: React.FunctionComponent<IListOfUsersProps> = (props: R
 
     return (
         <div>
-            <Stack tokens={{ childrenGap: "3px" }}>
+            <Stack tokens={{ childrenGap: "3px" }} horizontal>
                 {userList.map((user) => {
                     return (
                         <Text>{user.Username}</Text>
