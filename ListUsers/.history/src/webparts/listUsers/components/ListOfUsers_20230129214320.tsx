@@ -3,7 +3,6 @@ import { PrimaryButton, Stack, Text } from 'office-ui-fabric-react';
 import * as React from 'react';
 import ListUsersProvider from '../../../providers/ListUsersProvider';
 import { IUser } from '../models/IUser';
-import { Button } from './Button';
 
 export interface IListOfUsersProps {
     context: WebPartContext;
@@ -26,20 +25,12 @@ export const ListOfUsers: React.FunctionComponent<IListOfUsersProps> = (props: R
 
     return (
         <div>
-            <Stack tokens={{ childrenGap: "20px" }}>
+            <Stack tokens={{ childrenGap: "3px" }}>
                 {userList.map((user) => {
                     return (
-                        <Stack tokens={{childrenGap: "7px"}}>
-                            <Text variant='large'>
-                                <b>Username: </b>{user.Username}
-                            </Text>
-                            <Text variant='large'>
-                                <b>Age: </b>{user.Age}
-                            </Text>
-                            <Text variant='large'>
-                                <b>Field of Work: </b>{user.FOW}
-                            </Text>
-                        <Button />
+                        <Stack>
+                            <Text variant='large'> <b>Username:</b> {user.Username}
+                                <b>Age:</b> {user.Age}</Text>
                         </Stack>
                     )
                 })}

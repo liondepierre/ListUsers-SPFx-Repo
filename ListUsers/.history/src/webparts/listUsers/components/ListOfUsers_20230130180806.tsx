@@ -29,17 +29,19 @@ export const ListOfUsers: React.FunctionComponent<IListOfUsersProps> = (props: R
             <Stack tokens={{ childrenGap: "20px" }}>
                 {userList.map((user) => {
                     return (
-                        <Stack tokens={{childrenGap: "7px"}}>
+                        <Stack>
                             <Text variant='large'>
                                 <b>Username: </b>{user.Username}
+                                <Button />
                             </Text>
                             <Text variant='large'>
                                 <b>Age: </b>{user.Age}
+                                <Button />
                             </Text>
                             <Text variant='large'>
                                 <b>Field of Work: </b>{user.FOW}
+                                <Button />
                             </Text>
-                        <Button />
                         </Stack>
                     )
                 })}

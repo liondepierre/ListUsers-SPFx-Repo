@@ -29,7 +29,7 @@ export const ListOfUsers: React.FunctionComponent<IListOfUsersProps> = (props: R
             <Stack tokens={{ childrenGap: "20px" }}>
                 {userList.map((user) => {
                     return (
-                        <Stack tokens={{childrenGap: "7px"}}>
+                        <Stack>
                             <Text variant='large'>
                                 <b>Username: </b>{user.Username}
                             </Text>
